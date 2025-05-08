@@ -17,7 +17,7 @@ app.conf.beat_schedule = {
         'schedule': crontab(minute=0, hour='*/8'),
     },
     'stat-host-count-every-day': {
-        'task': 'apps.assets.tasks.stat_host_count',
+        'task': 'apps.tasks.stat_host_count',
         'schedule': crontab(minute=0, hour=0),
     },
 }
