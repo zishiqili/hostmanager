@@ -13,6 +13,8 @@ class City(models.Model):
 
 class IDC(models.Model):
     name = models.CharField(max_length=100)
+    password = models.CharField(max_length=100, blank=True, null=True)
+    username = models.CharField(max_length=100, blank=True, null=True)
     address = models.CharField(max_length=200)
     phone = models.CharField(max_length=20, blank=True, null=True)
     contact_person = models.CharField(max_length=50, blank=True, null=True)
