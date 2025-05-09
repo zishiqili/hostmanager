@@ -89,7 +89,7 @@ def stat_host_count():
     '''
     from django.db.models import Count
 
-    today = timezone.now().date()
+    today = datetime.datetime.today()
     stats = (
         Host.objects
         .values('idc__city', 'idc')
